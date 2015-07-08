@@ -8,7 +8,8 @@ for further information.
 #### Installation
 
 [`SOP_ComputeTangents.dll`](https://github.com/teared/mikktspace-for-
-houdini/raw/master/SOP_ComputeTangents.dll) for Windows users.
+houdini/raw/master/SOP_ComputeTangents.dll) for Windows users. Drop into a dso
+folder inside usual houdini catalog like `$HIP\dso` or `$HOME\dso`.
 
 I've never run a non-Windows PC. [Compiling from source](http://www.sidefx.com/docs/hdk14.0/_h_d_k__intro__compiling.html) is a
 sole option for experienced non-Windows users at this moment.
