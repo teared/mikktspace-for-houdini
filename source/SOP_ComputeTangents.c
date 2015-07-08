@@ -55,6 +55,16 @@ OP_ERROR SOP_ComputeTangents::cookMySop(OP_Context &context)
         return error();
     }
 
+    for (GA_Iterator i(gdp->getPrimitiveRange()); !i.atEnd(); i.advance())
+    {
+        GA_Size numvtx = gdp->getPrimitive(*i)->getVertexCount();
+        if (numvtx != 3 && numvtx != 4)
+        {
+            addError(SOP_ERR_INVALID_SRC, "(only quads and triangles allowed)");
+            return error();
+        }
+    }
+
     bool basic = evalInt("basic", 0, context.getTime());
 
     if (basic)
