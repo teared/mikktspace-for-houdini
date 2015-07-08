@@ -1,1 +1,3 @@
-mikktspace.*   linguist-vendored
+mikktspace.c linguist-vendored
+mikktspace.h linguist-vendored
+*.c linguist-language=C++
