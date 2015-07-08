@@ -16,9 +16,9 @@ sole option for experienced non-Windows users at this moment.
 This is not a ready-to-use solution for baking normal maps, only for
 [calculating tangents](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/source/mikktspace.c) and auxiliary attributes. Resulting tangents
 may appear similar to PolyFrame-generated attribute where `Texture UV
-gradient` option was chosen. This tangents can be used to get quality xNormal-
-like bakes in Houdini. The shame is Mantra still has no decent raytrace baker
-built in.
+gradient` option was chosen. This tangents can be used to get quality
+xNormal-like bakes in Houdini. The shame is Mantra still has no decent
+raytrace baking built in.
 
 #### License
 This is free and unencumbered software released into the public domain.
