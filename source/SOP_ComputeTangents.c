@@ -95,7 +95,7 @@ OP_ERROR SOP_ComputeTangents::cookMySop(OP_Context &context)
 void newSopOperator(OP_OperatorTable *table)
 {
     table->addOperator(new OP_Operator("computetangents", "Compute Tangents",
-        SOP_ComputeTangents::myConstructor,
-        SOP_ComputeTangents::myTemplateList,
-        1, 1));
+                                       SOP_ComputeTangents::myConstructor,
+                                       SOP_ComputeTangents::myTemplateList,
+                                       1, 1));
 }
