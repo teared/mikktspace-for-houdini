@@ -7,6 +7,12 @@ resulting tangents in any desired fashion. The resulting tangents may look
 like PolyFrame SOP generated tangents, where the `Texture UV gradient` option
 was chosen.
 
+#### Installation
+[`SOP_ComputeTangents.dll`](https://github.com/teared/mikktspace-for-houdini/raw/master/SOP_ComputeTangents.dll) for Windows users.
+
+[`Compiling from Source`](http://www.sidefx.com/docs/hdk14.0/_h_d_k__intro__compiling.html) for non-Windows (and experienced) users.
+
+
 
 #### License
 This is free and unencumbered software released into the public domain.
