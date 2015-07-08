@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <HDK_DSO_PATH>D:\Projects\houdini\dso</HDK_DSO_PATH>
+    <HDK_EXE>C:\Program Files\Side Effects Software\Houdini 14.0.335\bin\hmaster.exe</HDK_EXE>
+    <HDK_GLOBAL>D:\Projects\houdini</HDK_GLOBAL>
+    <HDK_HFS>C:\Program Files\Side Effects Software\Houdini 14.0.335</HDK_HFS>
+    <HDK_VERSION>14.0.335</HDK_VERSION>
+    <MSVCDir>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC</MSVCDir>
+    <WIN32_SDK>C:\Program Files (x86)\Windows Kits\8.0</WIN32_SDK>
+  </PropertyGroup>
+  <PropertyGroup>
+    <_PropertySheetDisplayName>HDK</_PropertySheetDisplayName>
+    <OutDir>$(HDK_DSO_PATH)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.\include;$(HDK_GLOBAL)\toolkit\include;$(HDK_HFS)\toolkit\include;$(MSVCDir)\include;$(WIN32_SDK)\Include\um;$(WIN32_SDK)\Include\shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>/bigobj
+/w14996
+/wd4355 %(AdditionalOptions)</AdditionalOptions>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;_WIN32_WINNT=0x0502;AMD64;BOOST_ALL_NO_LIB;FBX_ENABLED=1;I386;MAKING_DSO;NDEBUG;NOMINMAX;OPENCL_ENABLED=1;OPENVDB_ENABLED=1;SESI_LITTLE_ENDIAN;SIZEOF_VOID_P=8;STRICT;SWAP_BITFIELDS;VERSION="$(HDK_VERSION)";WIN32;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/LIBPATH:"$(MSVCDir)\lib\amd64"
+/LIBPATH:"$(WIN32_SDK)\Lib\win8\um\x64"
+/LIBPATH:"$(HDK_HFS)\custom\houdini\dsolib" "$(HDK_HFS)\custom\houdini\dsolib\*.a" "$(HDK_HFS)\custom\houdini\dsolib\*.lib" %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="HDK_DSO_PATH">
+      <Value>$(HDK_DSO_PATH)</Value>
+    </BuildMacro>
+    <BuildMacro Include="HDK_EXE">
+      <Value>$(HDK_EXE)</Value>
+    </BuildMacro>
+    <BuildMacro Include="HDK_GLOBAL">
+      <Value>$(HDK_GLOBAL)</Value>
+    </BuildMacro>
+    <BuildMacro Include="HDK_HFS">
+      <Value>$(HDK_HFS)</Value>
+    </BuildMacro>
+    <BuildMacro Include="HDK_VERSION">
+      <Value>$(HDK_VERSION)</Value>
+    </BuildMacro>
+    <BuildMacro Include="MSVCDir">
+      <Value>$(MSVCDir)</Value>
+    </BuildMacro>
+    <BuildMacro Include="WIN32_SDK">
+      <Value>$(WIN32_SDK)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
