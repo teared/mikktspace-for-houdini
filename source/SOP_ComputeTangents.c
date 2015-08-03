@@ -70,6 +70,12 @@ OP_ERROR SOP_ComputeTangents::cookMySop(OP_Context &context)
     if (basic)
     {
         GA_RWHandleV3 tangentuHandle(gdp->addFloatTuple(GA_ATTRIB_VERTEX, "tangentu", 3));
+        
+        // Change type to "vector" from "3 floats". It allows to retain good
+        // tangent directions after transforming geometry with changing the
+        // normals itself. PolyFrame SOP also uses such vectors for tangents.
+        gdp->findAttribute(GA_ATTRIB_VERTEX, "tangentu")->setTypeInfo(GA_TYPE_VECTOR);
+        
         GA_RWHandleF signHandle(gdp->addFloatTuple(GA_ATTRIB_VERTEX, "sign", 1));
         Calculator().callMorty(gdp, basic);
         tangentuHandle.bumpDataId();
@@ -78,7 +84,9 @@ OP_ERROR SOP_ComputeTangents::cookMySop(OP_Context &context)
     else
     {
         GA_RWHandleV3 tangentuHandle(gdp->addFloatTuple(GA_ATTRIB_VERTEX, "tangentu", 3));
+        gdp->findAttribute(GA_ATTRIB_VERTEX, "tangentu")->setTypeInfo(GA_TYPE_VECTOR);
         GA_RWHandleV3 tangentvHandle(gdp->addFloatTuple(GA_ATTRIB_VERTEX, "tangentv", 3));
+        gdp->findAttribute(GA_ATTRIB_VERTEX, "tangentv")->setTypeInfo(GA_TYPE_VECTOR);
         GA_RWHandleF maguHandle(gdp->addFloatTuple(GA_ATTRIB_VERTEX, "magu", 1));
         GA_RWHandleF magvHandle(gdp->addFloatTuple(GA_ATTRIB_VERTEX, "magv", 1));
         GA_RWHandleI keepHandle(gdp->addIntTuple(GA_ATTRIB_VERTEX, "keep", 1));
