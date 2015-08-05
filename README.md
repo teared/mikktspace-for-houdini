@@ -22,6 +22,8 @@ xNormal-like bakes in Houdini.
 #### Tangent Space Normals Baking
 [`bake_normals_example.hdanc`](https://github.com/teared/mikktspace-for-houdini/raw/master/bake_normals_example.hdanc)
 
+Results: [Mantra](http://i.imgur.com/sFNHdEM.png), [xNormal](http://i.imgur.com/gWL83nP.png).
+
 Sample object space normals, then multiply resulting vector by inversion of
 tangent basis, then remap it to 0-1 texture range. The sampler is very simple,
 to achieve better results it may be worth to build something more complex.
