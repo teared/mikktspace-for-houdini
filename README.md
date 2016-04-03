@@ -54,13 +54,15 @@ apps with their own calculators.
 ##### Tests
 
 1. Triangulated, soft normals. Consider as default setup.
-Cases:
+
+   Cases:
    [MikkTSpace](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_tris_soft_mikk.png),
    [Mantra](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_tris_soft_mantra.png),
    [xNormal](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_tris_soft_xnormal.png),
    [Inside Unreal (MikkTSpace)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_nstyle_tris_soft_mikk.png),
-   [Inside Unreal (Geometry)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_nstyle_raw_tris_soft_mikk.png);
-Pigs:
+   [Inside Unreal (Geometry)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_nstyle_raw_tris_soft_mikk.png).
+
+   Pigs:
    [MikkTSpace](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_tris_soft_mikk.png),
    [Mantra](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_tris_soft_mantra.png),
    [xNormal](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_tris_soft_xnormal.png),
@@ -68,31 +70,36 @@ Pigs:
 Spot some tearing at UV seams in Mantra examples.
 
 2. Triangulated, soft normals with attribute smoothing.
-Cases:
+
+   Cases:
    [MikkTSpace](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_tris_soft_smoothed_mikk.png),
    [Mantra](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_tris_soft_smoothed_mantra.png),
    [xNormal](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_tris_soft_smoothed_xnormal.png),
    [Inside Unreal (MikkTSpace)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_nstyle_tris_soft_smoothed_mikk.png),
-   [Inside Unreal (Geometry)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_nstyle_raw_tris_soft_smoothed_mikk.png);
-Pigs:
+   [Inside Unreal (Geometry)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_nstyle_raw_tris_soft_smoothed_mikk.png).
+
+   Pigs:
    [MikkTSpace](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_tris_soft_smoothed_mikk.png),
    [Mantra](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_tris_soft_smoothed_mantra.png),
    [xNormal](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_tris_soft_smoothed_xnormal.png),
    [Inside Unreal (MikkTSpace)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_nstyle_tris_soft_smoothed_mikk.png).
 
 3. Quad mesh, soft normals with attribute smoothing.
-Cases:
+
+   Cases:
    [MikkTSpace](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_quads_soft_smoothed_mikk.png),
    [Mantra](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_quads_soft_smoothed_mantra.png),
    [xNormal](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_quads_soft_smoothed_xnormal.png),
    [Inside Unreal (MikkTSpace)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_nstyle_quads_soft_smoothed_mikk.png),
-   [Inside Unreal (Geometry)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_nstyle_raw_quads_soft_smoothed_mikk.png);
-Pigs:
+   [Inside Unreal (Geometry)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_nstyle_raw_quads_soft_smoothed_mikk.png).
+
+   Pigs:
    [MikkTSpace](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_quads_soft_smoothed_mikk.png),
    [Mantra](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_quads_soft_smoothed_mantra.png),
    [xNormal](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_quads_soft_smoothed_xnormal.png),
-   [Inside Unreal (MikkTSpace)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_nstyle_quads_soft_smoothed_mikk.png);
-Examples of automatic triangulation:
+   [Inside Unreal (MikkTSpace)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_nstyle_quads_soft_smoothed_mikk.png).
+
+   Examples of automatic triangulation:
    [Houdini](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/triangulation_houdini.png),
    [UE4](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/triangulation_ue4.png).
 
