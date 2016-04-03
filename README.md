@@ -58,37 +58,40 @@ Cases:
    [MikkTSpace](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_tris_soft_mikk.png),
    [Mantra](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_tris_soft_mantra.png),
    [xNormal](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_tris_soft_xnormal.png),
-   [Inside Unreal](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_nstyle_tris_soft_mikk);
+   [Inside Unreal (MikkTSpace)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_nstyle_tris_soft_mikk.png),
+   [Inside Unreal (Geometry)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_nstyle_raw_tris_soft_mikk.png);
 Pigs:
    [MikkTSpace](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_tris_soft_mikk.png),
    [Mantra](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_tris_soft_mantra.png),
    [xNormal](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_tris_soft_xnormal.png),
-   [Inside Unreal](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_nstyle_tris_soft_mikk).
+   [Inside Unreal (MikkTSpace)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_nstyle_tris_soft_mikk.png).
 Spot some tearing at UV seams in Mantra examples.
 
-2. Triangulated, soft normals with attribute smoothing. 
+2. Triangulated, soft normals with attribute smoothing.
 Cases:
    [MikkTSpace](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_tris_soft_smoothed_mikk.png),
    [Mantra](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_tris_soft_smoothed_mantra.png),
    [xNormal](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_tris_soft_smoothed_xnormal.png),
-   [Inside Unreal](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_nstyle_tris_soft_smoothed_mikk.png);
+   [Inside Unreal (MikkTSpace)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_nstyle_tris_soft_smoothed_mikk.png),
+   [Inside Unreal (Geometry)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_nstyle_raw_tris_soft_smoothed_mikk.png);
 Pigs:
    [MikkTSpace](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_tris_soft_smoothed_mikk.png),
    [Mantra](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_tris_soft_smoothed_mantra.png),
    [xNormal](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_tris_soft_smoothed_xnormal.png),
-   [Inside Unreal](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_nstyle_tris_soft_smoothed_mikk.png).
+   [Inside Unreal (MikkTSpace)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_nstyle_tris_soft_smoothed_mikk.png).
 
 3. Quad mesh, soft normals with attribute smoothing.
 Cases:
    [MikkTSpace](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_quads_soft_smoothed_mikk.png),
    [Mantra](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_quads_soft_smoothed_mantra.png),
    [xNormal](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_quads_soft_smoothed_xnormal.png),
-   [Inside Unreal](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_nstyle_quads_soft_smoothed_mikk);
+   [Inside Unreal (MikkTSpace)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_nstyle_quads_soft_smoothed_mikk.png),
+   [Inside Unreal (Geometry)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/case_nstyle_raw_quads_soft_smoothed_mikk.png);
 Pigs:
    [MikkTSpace](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_quads_soft_smoothed_mikk.png),
    [Mantra](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_quads_soft_smoothed_mantra.png),
    [xNormal](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_quads_soft_smoothed_xnormal.png),
-   [Inside Unreal](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_nstyle_quads_soft_smoothed_mikk);
+   [Inside Unreal (MikkTSpace)](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/pig_nstyle_quads_soft_smoothed_mikk.png);
 Examples of automatic triangulation:
    [Houdini](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/triangulation_houdini.png),
    [UE4](https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/triangulation_ue4.png).
@@ -97,7 +100,7 @@ Different normal styles affect tracing directions. Normal maps are quite
 different, but there is barely any difference in final shaders in UE4. xNormal
 best at dealing with quads, making perfectly synced normal maps, while both
 Houdini solutions are slightly unsynced. Before baking in Houdini, geometry
-should be triangulated by Divide SOP using Avoid small angles option.
+should be triangulated. Smoothing normals
 
 
 ##### More UE4 Tests
