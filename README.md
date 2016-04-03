@@ -107,7 +107,8 @@ Different normal styles affect tracing directions. Normal maps are quite
 different, but there is barely any difference in final shaders in UE4. xNormal
 best at dealing with quads, making perfectly synced normal maps, while both
 Houdini solutions are slightly unsynced. Before baking in Houdini, geometry
-should be triangulated. Smoothing normals
+should be triangulated. Attribute smoothing can help to avoid some problems
+as well as using hard edges, and generally not necessary with synced tangents.
 
 
 ##### More UE4 Tests
