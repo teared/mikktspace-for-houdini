@@ -35,8 +35,9 @@ compiled binary into a `dso` folder inside usual houdini catalog like
 > plugin, give Mantra a chance. Resulting tangents are nearly similar. Normal
 > maps baked with default tangents are already synced with MikkTSpace apps
 > quite well, much better than some other apps with their own calculators.
-> Notable artifacts produced by Mantra are "[torn edges]" on UV seams.
-> Depending on situation, they may be barely visible or even invisible.
+> Notable artifacts produced by default calculator are "[torn edges]" on UV
+> seams. Depending on situation, they may be barely visible or even invisible.
+
 
 [torn edges]: https://raw.githubusercontent.com/teared/mikktspace-for-houdini/master/extras/images/torn_edges.png
 
