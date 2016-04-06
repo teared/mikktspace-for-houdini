@@ -1,6 +1,6 @@
 ## Compute Tangents SOP
 
-Houdini plug-in bringing mikktspace library written by Morten S. Mikkelsen.
+Houdini plug-in bringing [mikktspace] library written by Morten S. Mikkelsen.
 Computed tangents can be used to bake normal maps. Resulting normal maps will
 be synced with xNormal, Blender, 3D Coat, Unreal Engine 4, Unity and other
 software using this library, and may not be synced well with Houdini.
