@@ -19,12 +19,13 @@ geometry attributes.
 See [Releases](https://github.com/teared/mikktspace-for-houdini/releases) for
 Windows binaries.
 
-To compile on Windows with Visual Studio or Build Tools, update `HDK_*` macros
+To compile on Windows with Visual Studio or Build Tools, [update] `HDK_*` macros
 inside `.props` file with your Houdini version and build `.sln` file.
 
 To compile on other operation systems, follow [tutorial] on HDK building and
 use source code files directly.
 
+[update]: https://github.com/teared/mikktspace-for-houdini/commit/6a9a7518e4e08735da99bb0808a3dfb3a2a12db9#diff-c3420d76b2c2d06ac74397cb0b7d9374
 [tutorial]: http://www.sidefx.com/docs/hdk15.0/_h_d_k__intro__compiling.html
 
 
