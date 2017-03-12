@@ -10,23 +10,21 @@ well.
 
 
 ### Houdini 16 Note
-Since Houdini 16.0.514, MikkTSpace supported at render-time via [`vm_bake_usemikkt`](http://www.sidefx.com/docs/houdini/props/mantra#vm_bake_usemikkt)
+Since Houdini 16.0.514, MikkTSpace supported at render-time via
+[`vm_bake_usemikkt`](http://www.sidefx.com/docs/houdini/props/mantra#vm_bake_usemikkt)
 property. Try it at first, if you don't need Mikk's tangents in SOP level as
 geometry attributes.
 
 
 ### Installation
-See [Releases](https://github.com/teared/mikktspace-for-houdini/releases) for
-Windows binaries.
+See [Releases] for Windows binaries. To compile on Windows with Visual Studio
+or Build Tools, [update] `HDK_*` macros inside `.props` file with your Houdini
+version and build `.sln` file. To compile on other operation systems, follow
+[tutorial] on HDK building and use source code files directly.
 
-To compile on Windows with Visual Studio or Build Tools, [update] `HDK_*` macros
-inside `.props` file with your Houdini version and build `.sln` file.
-
-To compile on other operation systems, follow [tutorial] on HDK building and
-use source code files directly.
-
+[Releases]: https://github.com/teared/mikktspace-for-houdini/releases
 [update]: https://github.com/teared/mikktspace-for-houdini/commit/6a9a7518e4e08735da99bb0808a3dfb3a2a12db9#diff-c3420d76b2c2d06ac74397cb0b7d9374
-[tutorial]: http://www.sidefx.com/docs/hdk15.0/_h_d_k__intro__compiling.html
+[tutorial]: http://www.sidefx.com/docs/hdk/_h_d_k__intro__compiling.html
 
 
 #### License
