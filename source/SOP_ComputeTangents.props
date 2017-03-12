@@ -3,10 +3,10 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros">
     <HDK_DSO_PATH>D:\Projects\houdini\dso</HDK_DSO_PATH>
-    <HDK_EXE>C:\Program Files\Side Effects Software\Houdini 15.5.553\bin\hmaster.exe</HDK_EXE>
+    <HDK_EXE>C:\Program Files\Side Effects Software\Houdini 16.0.530\bin\hmaster.exe</HDK_EXE>
     <HDK_GLOBAL>D:\Projects\houdini</HDK_GLOBAL>
-    <HDK_HFS>C:\Program Files\Side Effects Software\Houdini 15.5.553</HDK_HFS>
-    <HDK_VERSION>15.5.553</HDK_VERSION>
+    <HDK_HFS>C:\Program Files\Side Effects Software\Houdini 16.0.530</HDK_HFS>
+    <HDK_VERSION>16.0.530</HDK_VERSION>
     <MSVCDir>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC</MSVCDir>
     <WIN32_SDK>C:\Program Files (x86)\Windows Kits\8.1</WIN32_SDK>
   </PropertyGroup>
